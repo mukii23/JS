@@ -1,5 +1,6 @@
 /*** 
 ** Add scripts to wp_footer(). This script for change the Revolution Slider Background Video
+** This is just for Example Purpose only.
 ***/
 function child_theme_header_script() { ?>
 	<script>
