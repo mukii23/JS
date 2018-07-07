@@ -16,3 +16,33 @@ function child_theme_header_script() { ?>
 	</script>
 <?php }
 add_action( 'wp_footer', 'child_theme_header_script' );
+
+
+/*** 
+** Validation of form fields using JQUERY
+***/
+
+var c = jQuery('.mukii-phone');
+   c.blur(function(e){
+        phone = jQuery(this).val();
+        phone = phone.replace(/[^0-9]/g,'');
+        if (phone.length != 10)
+        {
+            alert('Phone number must be 10 digits.');
+            jQuery('.mukii-phone').val('');
+            jQuery('.mukii-phone').focus();
+        }
+    });
+jQuery('.mukii-email').focus(function(){
+        
+    }).blur(function(){
+        var re = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+	var is_email=re.test(jQuery(this).val());
+        if(!is_email){
+            confirm("You've entered wrong email.");
+            jQuery('.mukii-email').val('');
+            jQuery('.mukii-email').focus();
+        }else{
+            return true;
+        }
+    });
