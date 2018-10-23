@@ -13,3 +13,9 @@ $('.class').each(function() {
                 $(this).html(html);
            }
  });
+
+/***************
+**** Reset the Select Box option ****
+***************/
+
+$(".class").val(" ").trigger('change');
