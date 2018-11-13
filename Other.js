@@ -19,3 +19,10 @@ $('.class').each(function() {
 ***************/
 
 $(".class").val(" ").trigger('change');
+
+/***************
+**** Open Link in new tab ****
+***************/
+
+window.open( 'http://www.example.com', '_blank' );
+window.location = 'http://www.example.com';
