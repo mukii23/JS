@@ -46,3 +46,16 @@ jQuery('.mukii-email').focus(function(){
             return true;
         }
     });
+
+/******* 
+**** Accordian
+********/
+
+/**HTML View***/
+<h5>Heading1</h5>
+<div>Content1</div>
+
+jQuery( 'div #cs_accordion h5' ).click(function(a){
+	jQuery(a.target).next('div').siblings('div').slideUp("slow", "linear");
+        jQuery(a.target).next('div').slideToggle("slow", "linear");
+});
