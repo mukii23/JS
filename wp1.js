@@ -27,6 +27,13 @@ $.ajax({
  url: ajax_login.ajaxurl
 -------You Code--------
 });
+###############################################
+4. var getUrl = window.location;
+   var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1] + '/wp-admin/admin-ajax.php';
+$.ajax({
+ url: ajax_login.ajaxurl
+-------You Code--------
+});
 
 
 /**************
