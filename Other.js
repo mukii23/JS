@@ -26,3 +26,14 @@ $(".class").val(" ").trigger('change');
 
 window.open( 'http://www.example.com', '_blank' );
 window.location = 'http://www.example.com';
+
+/***************
+**** Responsive using jQuery****
+***************/
+
+jQuery(window).resize(function() {
+  var width = jQuery(window).width();
+  if (width > 600){
+       /*Your code*/
+  }
+});
