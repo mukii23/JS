@@ -22,3 +22,15 @@
         display: none;
     }
     
+/******************************
+=====Toggle submenu on-click
+******************************/
+jQuery('#custom_menu ul.menu > li.menu-item-has-children').click(function(e){
+
+	jQuery('#custom_menu ul.menu > li.menu-item-has-children').not(this).find('ul.sub-menu').slideUp();
+		jQuery(this).find('ul.sub-menu').stop(true, true).slideToggle(400);
+			return false;
+	});
+	jQuery('#custom_menu ul.menu > li.menu-item-has-children > ul > li').click(function(event){
+		event.stopPropagation();
+});
