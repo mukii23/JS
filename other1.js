@@ -34,3 +34,15 @@ jQuery('#custom_menu ul.menu > li.menu-item-has-children').click(function(e){
 	jQuery('#custom_menu ul.menu > li.menu-item-has-children > ul > li').click(function(event){
 		event.stopPropagation();
 });
+
+/******************************
+=====MENU hide on scroll
+******************************/
+
+jQuery(window).scroll(function(){                       
+	if (jQuery(this).scrollTop() >= 300) { 
+	   jQuery('header .header1').css('display', 'none');
+	} else {
+	   jQuery('header .header1').css('display', 'block');
+	}
+});
