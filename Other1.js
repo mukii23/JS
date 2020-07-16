@@ -35,3 +35,11 @@ const cookieValue = document.cookie
   .split('; ')
   .find(row => row.startsWith('percentage_value'))
   .split('=')[1];
+
+
+//*****
+Fetch URL using jquery
+*****//
+location.hostname = github.com
+document.URL = https://github.com/mukii23/JS/edit/master/Other1.js
+document.location.origin = https://github.com
