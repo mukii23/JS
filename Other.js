@@ -15,6 +15,17 @@ $('.class').each(function() {
  });
 
 /***************
+**** 254 Characters left ****
+***************/
+function textareaLengthCheck(id) {
+         var textarea = document.getElementById('remark-'+id);
+         var textArea = textarea.value.length;
+         var charactersLeft = 254 - textArea;
+         var count = document.getElementById('characters-left-'+id);
+         count.innerHTML = "Tekens over: " + charactersLeft;
+}
+
+/***************
 **** Reset the Select Box option ****
 ***************/
 
